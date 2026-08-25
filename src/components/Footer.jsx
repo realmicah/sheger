@@ -27,7 +27,7 @@ export default function Footer({ lang, setLang }) {
             </p>
 
             <div className="flex items-center gap-3 pt-2">
-              <a href="https://t.me" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 hover:bg-amber-400 hover:text-black transition-colors" title="Telegram">
+              <a href="https://t.me/+251911129206" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 hover:bg-amber-400 hover:text-black transition-colors" title="Telegram (+251 911 129 206)">
                 <Send className="w-4 h-4" />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 hover:bg-amber-400 hover:text-black transition-colors" title="Social Media">
