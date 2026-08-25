@@ -146,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <i class="fas fa-check-circle" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
           <strong>Thank You, ${name}!</strong><br>
           Your appointment request for <strong>${service}</strong> on <strong>${date} at ${time}</strong> has been submitted successfully.<br>
+          ${message ? `<span style="font-size: 0.85rem; color: #c8a45a; margin-top: 0.35rem; display: inline-block;">Note: "${message}"</span><br>` : ''}
           <span style="font-size: 0.85rem; color: #a0a0a0; margin-top: 0.5rem; display: inline-block;">Eyob Tesfaye will contact you at <strong>${phone}</strong> shortly to confirm.</span>
         `;
         successBox.classList.add('active');
@@ -161,10 +162,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 7. Auto-populate Service Selection from Service Cards
   document.querySelectorAll('.service-book-btn, .select-service-trigger').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', () => {
       const serviceName = btn.getAttribute('data-service-name');
       const aptServiceSelect = document.getElementById('aptService');
-      
+
       if (serviceName && aptServiceSelect) {
         for (let i = 0; i < aptServiceSelect.options.length; i++) {
           if (aptServiceSelect.options[i].value.toLowerCase().includes(serviceName.toLowerCase())) {
@@ -181,4 +182,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 8. Gallery Lightbox Modal Viewer
+  const lightboxModal = document.getElementById('lightboxModal');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCategory = document.getElementById('lightboxCategory');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxBackdrop = document.getElementById('lightboxBackdrop');
+
+  if (lightboxModal && lightboxImage) {
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const cat = item.querySelector('.gallery-category');
+        const title = item.querySelector('.gallery-title');
+
+        if (img) {
+          lightboxImage.src = img.src;
+          lightboxImage.alt = img.alt || 'Gallery photo';
+          if (lightboxCategory) lightboxCategory.textContent = cat ? cat.textContent : '';
+          if (lightboxTitle) lightboxTitle.textContent = title ? title.textContent : '';
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    const closeLightbox = () => {
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  }
+
 });
+
