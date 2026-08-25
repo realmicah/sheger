@@ -53,6 +53,15 @@ export default function LocationsContact({ lang, onOpenBooking }) {
                     <span className="text-xs text-slate-400 font-medium">{branch.seats} Barber Chairs</span>
                   </div>
 
+                  <div className="relative h-40 rounded-2xl overflow-hidden mb-6 border border-slate-800">
+                    <img
+                      src={branch.image}
+                      alt={lang === 'am' ? branch.nameAm : branch.nameEn}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+                  </div>
+
                   <h3 className={`text-2xl font-bold text-white mb-3 ${lang === 'am' ? 'font-amharic' : 'font-serif'}`}>
                     {lang === 'am' ? branch.nameAm : branch.nameEn}
                   </h3>
