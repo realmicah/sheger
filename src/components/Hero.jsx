@@ -11,7 +11,7 @@ export default function Hero({ lang, onOpenBooking }) {
       {/* Background Image with Dark Vignette Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero.jpg" 
+          src="/images/hero-shop-interior.jpg" 
           alt="Sheger Barber Shop Interior Addis Ababa" 
           className="w-full h-full object-cover object-center scale-105 filter brightness-50"
         />

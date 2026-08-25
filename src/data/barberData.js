@@ -216,7 +216,7 @@ export const servicesData = [
     descriptionEn: "Precision fade or classic scissor cut, hot towel nape clean-up, hair wash, and styling with premium pomade.",
     descriptionAm: "ትክክለኛ ስኪን ፌድ ወይም ክላሲክ ቁረጥ፣ የሞቀ ፎጣ ጽዳት፣ የፀጉር ታቦት እና ስታይሊንግ።",
     popular: true,
-    image: "/fade_cut.jpg"
+    image: "/images/interior-detail.jpg"
   },
   {
     id: "royal-beard",
@@ -228,7 +228,7 @@ export const servicesData = [
     descriptionEn: "Steam treatment, razor-sharp edge line-up, organic beard oil hydration, and precision scissor trimming.",
     descriptionAm: "የስቲም እንክብካቤ፣ በምላጭ ትክክለኛ መስመር ማውጣት፣ የተፈጥሮ ጺም ዘይት ማሳጅ።",
     popular: true,
-    image: "/beard_steam.jpg"
+    image: "/images/barber-working.jpg"
   },
   {
     id: "sheger-vip-combo",
@@ -240,7 +240,7 @@ export const servicesData = [
     descriptionEn: "Signature Haircut + Royal Beard Sculpting + Herbal Steam Facial Scrub + Head & Shoulder Massage + Espresso.",
     descriptionAm: "የፀጉር ቁረጥ + የጺም ቅርጽ + የሞቀ ስቲም የፊት ማሳጅ + የእጅ እና ትከሻ ማሳጅ + ነፃ ቡና።",
     popular: true,
-    image: "/hero.jpg"
+    image: "/images/grooming-service.jpg"
   },
   {
     id: "charcoal-facial",
@@ -252,7 +252,7 @@ export const servicesData = [
     descriptionEn: "Pore cleansing facial steam, blackhead extraction mask, and ice-cold soothing aloe hydration.",
     descriptionAm: "የፊት ቀዳዳዎችን የሚያጸዳ ስቲም፣ ቻርኮል ማስክ እና የእሬት እርጥበት ማሳጅ።",
     popular: false,
-    image: "/hero.jpg"
+    image: "/images/skin-fade.jpg"
   },
   {
     id: "father-son",
@@ -264,7 +264,7 @@ export const servicesData = [
     descriptionEn: "Full haircut and styling for dad + modern kid's haircut with design/line-up for son.",
     descriptionAm: "ለአባት ሙሉ የፀጉር ቁረጥ + ለልጅ ዘመናዊ ቁረጥ እና ዲዛይን።",
     popular: false,
-    image: "/fade_cut.jpg"
+    image: "/images/beard-grooming.jpg"
   },
   {
     id: "hair-dye-color",
@@ -276,7 +276,7 @@ export const servicesData = [
     descriptionEn: "Natural black or dark brown ammonia-free hair and beard color application with scalp protection.",
     descriptionAm: "ተፈጥሯዊ ጥቁር ወይም ጠይም ቀለም ለፀጉር እና ለጺም።",
     popular: false,
-    image: "/master_abel.jpg"
+    image: "/images/barber-station.jpg"
   }
 ];
 
@@ -291,7 +291,7 @@ export const masterBarbers = [
     reviewsCount: 380,
     specialtyEn: "Precision Low/Mid Fades, Razor Line-ups, Afro-Textured Styles",
     specialtyAm: "ትክክለኛ ስኪን ፌድ፣ የምላጭ መስመር እና አፍሮ ስታይል",
-    image: "/master_abel.jpg",
+    image: "/images/master-abel.jpg",
     branch: "Bole Medhanialem"
   },
   {
@@ -304,7 +304,7 @@ export const masterBarbers = [
     reviewsCount: 420,
     specialtyEn: "Hot Towel Beard Trimming, Charcoal Facial Steam, Classic Scissor Cuts",
     specialtyAm: "የሞቀ ፎጣ ጺም አሰራር፣ የፊት ስቲም እና ክላሲክ ቁረጥ",
-    image: "/master_dawit.jpg",
+    image: "/images/master-dawit.jpg",
     branch: "Kazanchis Executive"
   },
   {
@@ -317,7 +317,7 @@ export const masterBarbers = [
     reviewsCount: 290,
     specialtyEn: "Custom Line Designs, Color Tinting, Modern Taper Cuts",
     specialtyAm: "ልዩ የፀጉር ዲዛይኖች፣ የቀለም ቅብ እና ዘመናዊ ቴፐር",
-    image: "/master_abel.jpg",
+    image: "/images/master-solomon.jpg",
     branch: "Piassa Heritage"
   }
 ];
@@ -333,6 +333,7 @@ export const branchesData = [
     mapLink: "https://maps.google.com/?q=Bole+Medhanialem+Addis+Ababa",
     status: "Open Now",
     seats: 8,
+    image: "/images/styling-station.jpg",
     vibeEn: "Modern Luxury Executive Salon with Espresso Bar & High-Speed WiFi",
     vibeAm: "ዘመናዊ የቪአይፒ ላውንጅ ከነፃ ቡና እና ዋይፋይ ጋር"
   },
@@ -346,6 +347,7 @@ export const branchesData = [
     mapLink: "https://maps.google.com/?q=Kazanchis+Addis+Ababa",
     status: "Open Now",
     seats: 6,
+    image: "/images/kazanchis-lounge.jpg",
     vibeEn: "Quiet Business Gentleman Suite for quick professional cuts & beard trims",
     vibeAm: "ለቢዝነስ ሰዎች የተዘጋጀ ጸጥተኛ እና ዘመናዊ ሳሎን"
   },
@@ -359,6 +361,7 @@ export const branchesData = [
     mapLink: "https://maps.google.com/?q=Piassa+Addis+Ababa",
     status: "Open Now",
     seats: 7,
+    image: "/images/piassa-studio.jpg",
     vibeEn: "Vintage Ethiopian Culture Meets Modern Barber Craft",
     vibeAm: "የድሮዋ ፒያሳ ውበት ከዘመናዊ ስታይል ጋር የተዋሃደበት"
   }

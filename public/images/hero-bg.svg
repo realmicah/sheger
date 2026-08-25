@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="50%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5c175"/>
+      <stop offset="50%" stop-color="#c8a45a"/>
+      <stop offset="100%" stop-color="#9a7732"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(200, 164, 90, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <!-- Decorative Subtle Radial Overlay -->
+  <circle cx="800" cy="450" r="600" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.15" />
+  <circle cx="800" cy="450" r="450" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.2" stroke-dasharray="10 15" />
+
+  <!-- Central Barber Pole / Scissors Icon Motif -->
+  <g transform="translate(800, 360)">
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="90" fill="#1e1e1e" stroke="url(#goldGrad)" stroke-width="3" />
+    <circle cx="0" cy="0" r="78" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="6 6" opacity="0.5" />
+    
+    <!-- Crossed Scissors Icon -->
+    <path d="M-25,-25 L25,25 M25,-25 L-25,25" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-32" cy="-32" r="12" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="32" cy="-32" r="12" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="0" cy="0" r="6" fill="#c8a45a"/>
+  </g>
+
+  <!-- Typography Text Labels -->
+  <text x="800" y="520" font-family="'Montserrat', sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="4">
+    SHEGER BARBER
+  </text>
+  <text x="800" y="560" font-family="'Inter', sans-serif" font-size="18" font-weight="500" fill="#c8a45a" text-anchor="middle" letter-spacing="2">
+    ADDIS ABABA • EST. 2026
+  </text>
+  <text x="800" y="600" font-family="'Inter', sans-serif" font-size="14" fill="#888888" text-anchor="middle" letter-spacing="1">
+    [ Cozy Modern Barber Shop Interior Placeholder ]
+  </text>
+
+  <!-- Corner Gold Frame Accents -->
+  <path d="M 60 100 L 60 60 L 100 60" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  <path d="M 1540 100 L 1540 60 L 1500 60" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  <path d="M 60 800 L 60 840 L 100 840" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  <path d="M 1540 800 L 1540 840 L 1500 840" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+</svg>

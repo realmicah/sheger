@@ -13,7 +13,7 @@ export default function StyleVisualizer({ lang, onOpenBooking }) {
       titleEn: "Sheger High Skin Fade & Lineup",
       titleAm: "የሽገር ሀይ ስኪን ፌድ እና መስመር",
       category: 'fade',
-      image: "/fade_cut.jpg",
+      image: "/images/happy-client.jpg",
       recommendedBarber: "Master Abel",
       likesCount: 248
     },
@@ -22,7 +22,7 @@ export default function StyleVisualizer({ lang, onOpenBooking }) {
       titleEn: "Royal Steam Beard & Sharp Edges",
       titleAm: "ሮያል የሞቀ ፎጣ ጺም ዲዛይን",
       category: 'beard',
-      image: "/beard_steam.jpg",
+      image: "/images/beard-styling.jpg",
       recommendedBarber: "Master Dawit",
       likesCount: 312
     },
@@ -31,7 +31,7 @@ export default function StyleVisualizer({ lang, onOpenBooking }) {
       titleEn: "Modern Afro Taper Fade",
       titleAm: "ዘመናዊ አፍሮ ቴፐር ፌድ",
       category: 'afro',
-      image: "/master_abel.jpg",
+      image: "/images/classic-haircut.jpg",
       recommendedBarber: "Master Abel",
       likesCount: 189
     },
@@ -40,7 +40,7 @@ export default function StyleVisualizer({ lang, onOpenBooking }) {
       titleEn: "Executive Scissors Cut & Parting",
       titleAm: "ኤግዚክዩቲቭ የፀጉር ቁረጥ",
       category: 'executive',
-      image: "/master_dawit.jpg",
+      image: "/images/barber-tools.jpg",
       recommendedBarber: "Master Solomon",
       likesCount: 275
     }
