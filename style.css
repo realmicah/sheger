@@ -1461,7 +1461,8 @@ img {
     gap: 3rem;
   }
   .shop-images-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -1495,6 +1496,9 @@ img {
   }
   .hero-headline {
     font-size: 2.2rem;
+  }
+  .shop-images-grid {
+    grid-template-columns: 1fr;
   }
   .appointment-form {
     grid-template-columns: 1fr;
